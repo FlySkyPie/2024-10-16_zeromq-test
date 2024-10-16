@@ -1,0 +1,27 @@
+{
+  "name": "2024-10-14_gamepad-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "devDependencies": {
+    "lebab": "^3.2.4",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8"
+  },
+  "dependencies": {
+    "@sensslen/node-gamepad": "^1.0.7",
+    "@types/colors": "^1.2.1",
+    "@types/node": "^22.7.5",
+    "@types/node-gamepad": "^1.5.0",
+    "colors": "^1.4.0",
+    "gamecontroller": "^0.0.2",
+    "node-gamepad": "^0.1.15",
+    "node-gyp": "^10.2.0",
+    "node-hid": "^3.1.0",
+    "nodemon": "^3.1.7",
+    "vite-node": "^2.1.3"
+  }
+}
