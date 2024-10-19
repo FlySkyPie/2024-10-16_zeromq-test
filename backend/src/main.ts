@@ -7,14 +7,15 @@ async function run() {
     console.log("Producer bound to port 38989");
 
     // Simulate game loop.
-    setInterval(async () => {
+    const timer = setInterval(async () => {
         try {
             await sock.send("4");
             const [result] = await sock.receive();
 
-            console.log("Server got result:", result);
+            // console.log("Server got result:", result);
         } catch (error) {
             console.error(error);
+            clearInterval(timer)
         }
     }, 100);
 }
