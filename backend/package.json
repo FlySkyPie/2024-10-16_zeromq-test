@@ -7,11 +7,13 @@
     "dev": "nodemon"
   },
   "devDependencies": {
+    "@types/pngjs": "^6.0.5",
     "typescript": "^5.5.3",
     "vite": "^5.4.8"
   },
   "dependencies": {
     "nodemon": "^3.1.7",
+    "pngjs": "^7.0.0",
     "vite-node": "^2.1.3",
     "zeromq": "^6.0.8"
   }

@@ -7,11 +7,13 @@
     "dev": "nodemon"
   },
   "devDependencies": {
+    "@types/three": "^0.169.0",
     "lebab": "^3.2.4",
     "typescript": "^5.5.3",
     "vite": "^5.4.8"
   },
   "dependencies": {
+    "3d-core-raub": "^4.3.0",
     "@girs/node-gtk": "^3.3.0",
     "@sensslen/node-gamepad": "^1.0.7",
     "@types/colors": "^1.2.1",
@@ -23,6 +25,7 @@
     "node-gyp": "^10.2.0",
     "node-hid": "^3.1.0",
     "nodemon": "^3.1.7",
+    "three": "^0.169.0",
     "ts-node": "^10.9.2",
     "tsx": "^4.19.1",
     "vite-node": "^2.1.3",

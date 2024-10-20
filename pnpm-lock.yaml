@@ -13,6 +13,9 @@ importers:
       nodemon:
         specifier: ^3.1.7
         version: 3.1.7
+      pngjs:
+        specifier: ^7.0.0
+        version: 7.0.0
       vite-node:
         specifier: ^2.1.3
         version: 2.1.3(@types/node@22.7.5)
@@ -20,6 +23,9 @@ importers:
         specifier: ^6.0.8
         version: 6.0.8
     devDependencies:
+      '@types/pngjs':
+        specifier: ^6.0.5
+        version: 6.0.5
       typescript:
         specifier: ^5.5.3
         version: 5.6.3
@@ -29,6 +35,9 @@ importers:
 
   client:
     dependencies:
+      3d-core-raub:
+        specifier: ^4.3.0
+        version: 4.3.0(node-addon-api@8.2.1)
       '@girs/node-gtk':
         specifier: ^3.3.0
         version: 3.3.0(node-gtk@0.14.0(encoding@0.1.13))
@@ -62,6 +71,9 @@ importers:
       nodemon:
         specifier: ^3.1.7
         version: 3.1.7
+      three:
+        specifier: ^0.169.0
+        version: 0.169.0
       ts-node:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@22.7.5)(typescript@5.6.3)
@@ -75,6 +87,9 @@ importers:
         specifier: ^6.0.8
         version: 6.0.8
     devDependencies:
+      '@types/three':
+        specifier: ^0.169.0
+        version: 0.169.0
       lebab:
         specifier: ^3.2.4
         version: 3.2.4
@@ -86,6 +101,10 @@ importers:
         version: 5.4.9(@types/node@22.7.5)
 
 packages:
+
+  3d-core-raub@4.3.0:
+    resolution: {integrity: sha512-BG/lNe9v8ryo0LTguSnqoLyZCpNP4Ed3UWGtm5Hcd5tnpl7DP47S+fhtQckAAZe0v39bFaEhkDBITYH0M2+wMQ==}
+    engines: {node: '>=20.14.0', npm: '>=10.7.0'}
 
   '@aminya/node-gyp-build@4.8.1-aminya.1':
     resolution: {integrity: sha512-r5eD8cvhlXpr5H2TKKsDBlPUzmK8FaWQG4QQ0+AbHyGra2a1uZBa7r9DXCe4FSADw1sU9RAMRJH5/POm4lojFQ==}
@@ -537,6 +556,9 @@ packages:
   '@tsconfig/node16@1.0.4':
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
 
+  '@tweenjs/tween.js@23.1.3':
+    resolution: {integrity: sha512-vJmvvwFxYuGnF2axRtPYocag6Clbb5YS7kLL+SO/TeVFzHqDIWrNKYtcsPMibjDx9O+bu+psAy9NKfWklassUA==}
+
   '@types/colors@1.2.1':
     resolution: {integrity: sha512-7jNkpfN2lVO07nJ1RWzyMnNhH/I5N9iWuMPx9pedptxJ4MODf8rRV0lbJi6RakQ4sKQk231Fw4e2W9n3D7gZ3w==}
     deprecated: This is a stub types definition. colors provides its own type definitions, so you don't need this installed.
@@ -549,6 +571,21 @@ packages:
 
   '@types/node@22.7.5':
     resolution: {integrity: sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==}
+
+  '@types/pngjs@6.0.5':
+    resolution: {integrity: sha512-0k5eKfrA83JOZPppLtS2C7OUtyNAl2wKNxfyYl9Q5g9lPkgBl/9hNyAu6HuEH2J4XmIv2znEpkDd0SaZVxW6iQ==}
+
+  '@types/stats.js@0.17.3':
+    resolution: {integrity: sha512-pXNfAD3KHOdif9EQXZ9deK82HVNaXP5ZIF5RP2QG6OQFNTaY2YIetfrE9t528vEreGQvEPRDDc8muaoYeK0SxQ==}
+
+  '@types/three@0.169.0':
+    resolution: {integrity: sha512-oan7qCgJBt03wIaK+4xPWclYRPG9wzcg7Z2f5T8xYTNEF95kh0t0lklxLLYBDo7gQiGLYzE6iF4ta7nXF2bcsw==}
+
+  '@types/webxr@0.5.20':
+    resolution: {integrity: sha512-JGpU6qiIJQKUuVSKx1GtQnHJGxRjtfGIhzO2ilq43VZZS//f1h1Sgexbdk+Lq+7569a6EYhOWrUpIruR/1Enmg==}
+
+  '@webgpu/types@0.1.49':
+    resolution: {integrity: sha512-NMmS8/DofhH/IFeW+876XrHVWel+J/vdcFCHLDqeJgkH9x0DeiwjVd8LcBdaxdG/T7Rf8VUAYsA8X1efMzLjRQ==}
 
   abbrev@1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
@@ -570,6 +607,15 @@ packages:
     resolution: {integrity: sha512-8zSiw54Oxrdym50NlZ9sUusyO1Z1ZchgRLWRaK6c86XJFClyCgFKetdowBg5bKxyp/u+CDBJG4Mpp0m3HLZl9w==}
     engines: {node: '>=0.4.0'}
     hasBin: true
+
+  addon-tools-raub@8.0.0:
+    resolution: {integrity: sha512-6D5nqyl/wtgPQkRhHMO9mKz+8i7N8ws2MuXxBpClOAsiwvVqIqs/gvUCkS4Ia0ixsCltvWQvZvGMwr3UjtJO3g==}
+    engines: {node: '>=20.14.0', npm: '>=10.7.0'}
+    peerDependencies:
+      node-addon-api: ^8.0.0
+    peerDependenciesMeta:
+      node-addon-api:
+        optional: true
 
   agent-base@6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
@@ -731,6 +777,14 @@ packages:
   delegates@1.0.0:
     resolution: {integrity: sha512-bd2L678uiWATM6m5Z1VzNCErI3jiGzt6HGY8OVICs40JQq/HALfbyNJmp0UDakEY4pMMaN0Ly5om/B1VI/+xfQ==}
 
+  deps-freeimage-raub@5.0.0:
+    resolution: {integrity: sha512-arWoPAcj68IFm+ZdpTDav3Cp6nSMm8JZlObSkrKQn98/ydU02BWlQtKJ6YEM7j1zDaXqHHhVUzlgPXMw8A28Ow==}
+    engines: {node: '>=20.14.0', npm: '>=10.7.0'}
+
+  deps-opengl-raub@6.0.0:
+    resolution: {integrity: sha512-Dh7cCwIOkP3urP2qGhDh6sNy9bjLRcq3DdqqiCNChQ6c0d+2Z7nXNH163xGJS6HvKgoZQ3uog8k0V25ANLoYRQ==}
+    engines: {node: '>=20.14.0', npm: '>=10.7.0'}
+
   detect-libc@2.0.3:
     resolution: {integrity: sha512-bwy0MGW55bG41VqxxypOsdSdGqLwXPI/focwgTYCFMbdUiBAxLg9CFzG08sz2aqzknwiX7Hkl0bQENjg8iLByw==}
     engines: {node: '>=8'}
@@ -811,6 +865,9 @@ packages:
     resolution: {integrity: sha512-8NALQS5oB1+9hkEwiRjsRroTAQ7zKmXjxe0ZcMHDRrFIR54PhSJp7Rm+Q5+tgJ7eO5ejCgbUPNXeiflX18Rt0Q==}
     engines: {node: '>=4'}
 
+  fflate@0.8.2:
+    resolution: {integrity: sha512-cPJU47OaAoCbg0pBvzsgpTPhmhqI5eJjh/JIu8tPj5q+T7iLvW/JAYUqmE7KOB4R1ZyEhzBaIQpQpardBF5z8A==}
+
   fill-range@7.1.1:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
     engines: {node: '>=8'}
@@ -860,6 +917,10 @@ packages:
 
   get-tsconfig@4.8.1:
     resolution: {integrity: sha512-k9PN+cFBmaLWtVz29SkUoqU5O0slLuHJXt/2P+tMVFT+phsSGXGkp9t3rQIqdz0e+06EHNGs3oM6ZX1s2zHxRg==}
+
+  glfw-raub@5.7.0:
+    resolution: {integrity: sha512-bcZVZoeqVf+H1H3ZmQw95SUxQLfFJTQ2/YIe/W7Sr3AEVotoQcU5NDDiBybrN9Zl8AS9GESBJwF7iiJEmqDwTg==}
+    engines: {node: '>=20.14.0', npm: '>=10.7.0'}
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -920,6 +981,10 @@ packages:
 
   ignore-by-default@1.0.1:
     resolution: {integrity: sha512-Ius2VYcGNk7T90CppJqcIkS5ooHUZyIQK+ClZfMfMNFEF9VSE73Fq+906u/CWu92x4gzZMWOwfFYckPObzdEbA==}
+
+  image-raub@4.3.0:
+    resolution: {integrity: sha512-EvLfWQXvIwZGeCgulzR+Nl8/5WJ3c0aTjMbYdO1GtbJLPejhcxNpZtnNlIps+MtsG64jBLQaABf5VClzu4pbgA==}
+    engines: {node: '>=20.14.0', npm: '>=10.7.0'}
 
   imurmurhash@0.1.4:
     resolution: {integrity: sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==}
@@ -1033,6 +1098,9 @@ packages:
     resolution: {integrity: sha512-P5PZoiUX2Tkghkv3tsSqlK0B9My/ErKapv1j6wdxd0MOrYQ30cnGE4LH/kzYB2gA5rN46Njqc4cFgJjaxgijoQ==}
     engines: {node: '>= 18'}
     hasBin: true
+
+  meshoptimizer@0.18.1:
+    resolution: {integrity: sha512-ZhoIoL7TNV4s5B6+rx5mC//fw8/POGyNxS/DZyCJeiZ12ScLfVwRE/GfsxwiTkMYYD5DmK2/JXnEVXqL4rF+Sw==}
 
   minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
@@ -1224,6 +1292,10 @@ packages:
     engines: {node: '>= 14.15.0'}
     hasBin: true
 
+  pngjs@7.0.0:
+    resolution: {integrity: sha512-LKWqWJRhstyYo9pGvgor/ivk2w94eSjE3RGVuzLGlr3NmD8bf7RcYGze1mNdEHRP6TRP6rMuDHk5t44hnTRyow==}
+    engines: {node: '>=14.19.0'}
+
   postcss@8.4.47:
     resolution: {integrity: sha512-56rxCq7G/XfB4EkXq9Egn5GCqugWvDFjafDOThIdMBsI15iqPqR5r15TfSr1YPYeEI19YeaXMCbY6u88Y76GLQ==}
     engines: {node: ^10 || ^12 || >=14}
@@ -1302,6 +1374,10 @@ packages:
 
   seedrandom@3.0.5:
     resolution: {integrity: sha512-8OwmbklUNzwezjGInmZ+2clQmExQPvomqjL7LFqOYqtmuxRgQYqOD3mHaU+MvZn5FLUeVxVfQjwLZW/n/JFuqg==}
+
+  segfault-raub@2.3.0:
+    resolution: {integrity: sha512-haDw5iuPN49R9Ik/vDNygd4/7fTtW22EQl8l8WPLywfKf/1tYJJR5gVNjzNiePL4hVzyiCjZisFcoxveXQNQUQ==}
+    engines: {node: '>=20.14.0', npm: '>=10.7.0'}
 
   semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
@@ -1404,6 +1480,9 @@ packages:
   tar@6.2.1:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
+
+  three@0.169.0:
+    resolution: {integrity: sha512-Ed906MA3dR4TS5riErd4QBsRGPcx+HBDX2O5yYE5GqJeFQTPU+M56Va/f/Oph9X7uZo3W3o4l2ZhBZ6f6qUv0w==}
 
   tiny-emitter@2.1.0:
     resolution: {integrity: sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==}
@@ -1520,6 +1599,10 @@ packages:
       terser:
         optional: true
 
+  webgl-raub@4.2.0:
+    resolution: {integrity: sha512-nKyUC2ghI0sARrXih02PLsshBzFCSxB6ToWZDDJ4c9A0qRgMuMMogOqKkbY05vwznuPv3z48S+eYXogd124hkw==}
+    engines: {node: '>=20.14.0', npm: '>=10.7.0'}
+
   webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
 
@@ -1574,6 +1657,15 @@ packages:
     engines: {node: '>= 10.2', pnpm: '>= 9'}
 
 snapshots:
+
+  3d-core-raub@4.3.0(node-addon-api@8.2.1):
+    dependencies:
+      addon-tools-raub: 8.0.0(node-addon-api@8.2.1)
+      glfw-raub: 5.7.0(node-addon-api@8.2.1)
+      image-raub: 4.3.0(node-addon-api@8.2.1)
+      webgl-raub: 4.2.0(node-addon-api@8.2.1)
+    transitivePeerDependencies:
+      - node-addon-api
 
   '@aminya/node-gyp-build@4.8.1-aminya.1': {}
 
@@ -1869,6 +1961,8 @@ snapshots:
 
   '@tsconfig/node16@1.0.4': {}
 
+  '@tweenjs/tween.js@23.1.3': {}
+
   '@types/colors@1.2.1':
     dependencies:
       colors: 1.4.0
@@ -1880,6 +1974,25 @@ snapshots:
   '@types/node@22.7.5':
     dependencies:
       undici-types: 6.19.8
+
+  '@types/pngjs@6.0.5':
+    dependencies:
+      '@types/node': 22.7.5
+
+  '@types/stats.js@0.17.3': {}
+
+  '@types/three@0.169.0':
+    dependencies:
+      '@tweenjs/tween.js': 23.1.3
+      '@types/stats.js': 0.17.3
+      '@types/webxr': 0.5.20
+      '@webgpu/types': 0.1.49
+      fflate: 0.8.2
+      meshoptimizer: 0.18.1
+
+  '@types/webxr@0.5.20': {}
+
+  '@webgpu/types@0.1.49': {}
 
   abbrev@1.1.1: {}
 
@@ -1894,6 +2007,10 @@ snapshots:
       acorn: 8.13.0
 
   acorn@8.13.0: {}
+
+  addon-tools-raub@8.0.0(node-addon-api@8.2.1):
+    optionalDependencies:
+      node-addon-api: 8.2.1
 
   agent-base@6.0.2:
     dependencies:
@@ -2070,6 +2187,18 @@ snapshots:
 
   delegates@1.0.0: {}
 
+  deps-freeimage-raub@5.0.0(node-addon-api@8.2.1):
+    dependencies:
+      addon-tools-raub: 8.0.0(node-addon-api@8.2.1)
+    transitivePeerDependencies:
+      - node-addon-api
+
+  deps-opengl-raub@6.0.0(node-addon-api@8.2.1):
+    dependencies:
+      addon-tools-raub: 8.0.0(node-addon-api@8.2.1)
+    transitivePeerDependencies:
+      - node-addon-api
+
   detect-libc@2.0.3: {}
 
   diff@4.0.2: {}
@@ -2175,6 +2304,8 @@ snapshots:
     dependencies:
       lodash: 4.17.21
 
+  fflate@0.8.2: {}
+
   fill-range@7.1.1:
     dependencies:
       to-regex-range: 5.0.1
@@ -2233,6 +2364,14 @@ snapshots:
   get-tsconfig@4.8.1:
     dependencies:
       resolve-pkg-maps: 1.0.0
+
+  glfw-raub@5.7.0(node-addon-api@8.2.1):
+    dependencies:
+      addon-tools-raub: 8.0.0(node-addon-api@8.2.1)
+      deps-opengl-raub: 6.0.0(node-addon-api@8.2.1)
+      segfault-raub: 2.3.0(node-addon-api@8.2.1)
+    transitivePeerDependencies:
+      - node-addon-api
 
   glob-parent@5.1.2:
     dependencies:
@@ -2315,6 +2454,14 @@ snapshots:
     optional: true
 
   ignore-by-default@1.0.1: {}
+
+  image-raub@4.3.0(node-addon-api@8.2.1):
+    dependencies:
+      addon-tools-raub: 8.0.0(node-addon-api@8.2.1)
+      deps-freeimage-raub: 5.0.0(node-addon-api@8.2.1)
+      segfault-raub: 2.3.0(node-addon-api@8.2.1)
+    transitivePeerDependencies:
+      - node-addon-api
 
   imurmurhash@0.1.4: {}
 
@@ -2449,6 +2596,8 @@ snapshots:
       seedrandom: 3.0.5
       tiny-emitter: 2.1.0
       typed-function: 4.2.1
+
+  meshoptimizer@0.18.1: {}
 
   minimatch@3.1.2:
     dependencies:
@@ -2662,6 +2811,8 @@ snapshots:
     dependencies:
       yargs: 17.7.2
 
+  pngjs@7.0.0: {}
+
   postcss@8.4.47:
     dependencies:
       nanoid: 3.3.7
@@ -2749,6 +2900,12 @@ snapshots:
     optional: true
 
   seedrandom@3.0.5: {}
+
+  segfault-raub@2.3.0(node-addon-api@8.2.1):
+    dependencies:
+      addon-tools-raub: 8.0.0(node-addon-api@8.2.1)
+    transitivePeerDependencies:
+      - node-addon-api
 
   semver@6.3.1: {}
 
@@ -2852,6 +3009,8 @@ snapshots:
       mkdirp: 1.0.4
       yallist: 4.0.0
 
+  three@0.169.0: {}
+
   tiny-emitter@2.1.0: {}
 
   tiny-invariant@1.3.3: {}
@@ -2946,6 +3105,14 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.7.5
       fsevents: 2.3.3
+
+  webgl-raub@4.2.0(node-addon-api@8.2.1):
+    dependencies:
+      addon-tools-raub: 8.0.0(node-addon-api@8.2.1)
+      deps-opengl-raub: 6.0.0(node-addon-api@8.2.1)
+      segfault-raub: 2.3.0(node-addon-api@8.2.1)
+    transitivePeerDependencies:
+      - node-addon-api
 
   webidl-conversions@3.0.1: {}
 
